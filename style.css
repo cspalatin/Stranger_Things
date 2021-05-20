@@ -1,0 +1,84 @@
+body {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: auto;
+}
+
+header {
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  height: 15vh;
+  background-color: rgb(207, 252, 161);
+  border-bottom: #0d6efd solid 5px;
+}
+
+header h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.left-links {
+  display: flex;
+  align-content: flex-start;
+  float: left;
+}
+.right-links {
+  display: flex;
+  align-content: flex-end;
+  float: right;
+}
+
+a {
+  padding: 1.5rem;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  color: darkgreen;
+  text-decoration: underline;
+}
+
+#posts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 15rem;
+  height: 25rem;
+  padding: 1rem;
+}
+
+.card-text {
+  overflow: auto;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.btn {
+  position: absolute;
+  right: 50px;
+}
+
+aside {
+  padding: 1.5rem;
+}
+
+.delete,
+.message {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}

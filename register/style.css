@@ -1,0 +1,50 @@
+body {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: auto;
+}
+
+header {
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  height: 15vh;
+  background-color: rgb(207, 252, 161);
+  border-bottom: #0d6efd solid 5px;
+}
+
+header h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.left-links {
+  display: flex;
+  align-content: flex-start;
+  float: left;
+}
+.right-links {
+  display: flex;
+  align-content: flex-end;
+  float: right;
+}
+
+a {
+  padding: 1.5rem;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  color: darkgreen;
+  text-decoration: underline;
+}
